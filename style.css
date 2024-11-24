@@ -1,0 +1,38 @@
+/* Internships Section */
+.internships {
+    margin: 2rem 0;
+}
+
+.internship {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+}
+
+.internship h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.internship p {
+    margin: 0.5rem 0;
+}
+
+.internship form {
+    margin-top: 1rem;
+}
+
+.internship button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.internship button:hover {
+    background: #0056b3;
+}
