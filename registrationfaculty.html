@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Registration Page </title>
+</head>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: #555;
+        }
+        input, select, button {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        } 
+</style>
+<body>
+    <div class="container">
+        <h2>Faculty Registration</h2>
+        <form action="faculty_register.php" method="POST">
+            <label for="faculty_name">Full Name</label>
+            <input type="text" id="faculty_name" name="faculty_name" placeholder="Enter your full name" required>
+
+            <label for="faculty_email">Email</label>
+            <input type="email" id="faculty_email" name="faculty_email" placeholder="Enter your email" required>
+
+            <label for="faculty_password">Password</label>
+            <input type="password" id="faculty_password" name="faculty_password" placeholder="Enter your password" required>
+
+            <label for="faculty_department">Department</label>
+            <input type="text" id="faculty_department" name="faculty_department" placeholder="E.g., Computer Science, Mechanical">
+
+            <label for="faculty_city">City</label>
+            <input type="text" id="faculty_city" name="faculty_city" placeholder="Enter your city" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
